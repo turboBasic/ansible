@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "yzhang.markdown-all-in-one",
+        "zbr.vscode-ansible",
+        "editorconfig.editorconfig",
+        "redhat.vscode-yaml",
+        "github.vscode-pull-request-github",
+        "donjayamanne.git-extension-pack",
+        "mhutchie.git-graph",
+        "codezombiech.gitignore",
+        "eamodio.gitlens"
+    ]
+}
