@@ -5,7 +5,10 @@
     state: present
     name: '{{ item }}'
   with_items:
+    - ansible
+    - ansible-lint
     - gawk
+    - jq
     - python3-pip
     - python3-venv
     - tig

@@ -14,7 +14,10 @@
     name: '{{ item }}'
   with_items:
     - git
+    - mc
     - neovim
+    - openssh-server
+    - rsync
     - tree
     - zsh
 

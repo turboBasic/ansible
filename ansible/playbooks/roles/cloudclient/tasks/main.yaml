@@ -6,6 +6,7 @@
     name: '{{ item }}'
   with_items:
     - ansible
+    - docker.io
     - lastpass-cli
 
 ...
