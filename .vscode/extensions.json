@@ -1,11 +1,14 @@
 {
     "recommendations": [
+        "ahmadawais.emoji-log-vscode",
+        "bierner.markdown-emoji",
         "codezombiech.gitignore",
         "donjayamanne.git-extension-pack",
         "eamodio.gitlens",
         "editorconfig.editorconfig",
         "github.vscode-pull-request-github",
         "jeff-hykin.better-shellscript-syntax",
+        "maixiaojie.git-emoji",
         "mhutchie.git-graph",
         "redhat.vscode-yaml",
         "timonwong.shellcheck",
