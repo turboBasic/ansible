@@ -1,0 +1,20 @@
+---
+
+- name: Remove packages
+  ansible.builtin.package:
+    state: absent
+    name: '{{ item }}'
+  with_items:
+    - thunderbird
+
+- name: Install common utils
+  ansible.builtin.package:
+    state: present
+    name: '{{ item }}'
+  with_items:
+    - git
+    - neovim
+    - tree
+    - zsh
+
+...

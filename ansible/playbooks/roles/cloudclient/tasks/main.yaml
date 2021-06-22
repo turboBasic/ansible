@@ -1,0 +1,11 @@
+---
+
+- name: Install clients for cloud-based infrastructure
+  ansible.builtin.package:
+    state: present
+    name: '{{ item }}'
+  with_items:
+    - ansible
+    - lastpass-cli
+
+...

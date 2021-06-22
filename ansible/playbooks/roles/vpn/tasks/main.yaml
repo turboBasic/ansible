@@ -1,0 +1,12 @@
+---
+
+- name: Install dependencies of Cisco Anyconnect VPN Client
+  ansible.builtin.package:
+    state: present
+    name: '{{ item }}'
+  with_items:
+    - libcanberra-gtk-module
+    - libgtk2.0-0
+    - libpangox-1.0-0
+
+...
