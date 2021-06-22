@@ -31,4 +31,6 @@
     - fonts-stix
     - ttf-bitstream-vera
 
+- import_tasks: vscode.yaml
+
 ...
