@@ -1,15 +1,15 @@
 {
     "recommendations": [
+        "codezombiech.gitignore",
+        "donjayamanne.git-extension-pack",
+        "eamodio.gitlens",
+        "editorconfig.editorconfig",
+        "github.vscode-pull-request-github",
+        "jeff-hykin.better-shellscript-syntax",
+        "mhutchie.git-graph",
+        "redhat.vscode-yaml",
+        "timonwong.shellcheck",
         "yzhang.markdown-all-in-one",
         "zbr.vscode-ansible",
-        "editorconfig.editorconfig",
-        "redhat.vscode-yaml",
-        "github.vscode-pull-request-github",
-        "donjayamanne.git-extension-pack",
-        "mhutchie.git-graph",
-        "codezombiech.gitignore",
-        "eamodio.gitlens",
-        "jeff-hykin.better-shellscript-syntax",
-        "timonwong.shellcheck"
     ]
 }
