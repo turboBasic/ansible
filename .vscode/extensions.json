@@ -8,6 +8,8 @@
         "donjayamanne.git-extension-pack",
         "mhutchie.git-graph",
         "codezombiech.gitignore",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "jeff-hykin.better-shellscript-syntax",
+        "timonwong.shellcheck"
     ]
 }
