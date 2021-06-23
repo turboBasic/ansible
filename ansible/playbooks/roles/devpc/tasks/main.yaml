@@ -11,27 +11,11 @@
     - jq
     - python3-pip
     - python3-venv
+    - ripgrep
     - tig
     - zeal
 
-- name: Install Clang
-  ansible.builtin.package:
-    state: present
-    name: '{{ item }}'
-  with_items:
-    - clang
-    - clang-format
-    - clang-tidy
-    - clang-tools
-    - clang-12
-    - clang-format-12
-    - clang-tidy-12
-    - clang-tools-12
-    - clang-12-doc
-    - llvm-12-doc
-    - python-pygments-doc
-    - fonts-mathjax-extras
-    - fonts-stix
-    - ttf-bitstream-vera
+- name: Import Clang task
+  ansible.builtin.import_tasks: clang.yaml
 
 ...

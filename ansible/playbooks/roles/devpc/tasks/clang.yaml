@@ -1,0 +1,23 @@
+---
+
+- name: Install Clang
+  ansible.builtin.package:
+    state: present
+    name: '{{ item }}'
+  with_items:
+    - clang
+    - clang-format
+    - clang-tidy
+    - clang-tools
+    - llvm
+
+- name: Install fonts and extras
+  ansible.builtin.package:
+    state: present
+    name: [
+        'fonts-mathjax-extras',
+        'fonts-stix',
+        'ttf-bitstream-vera',
+    ]
+
+...
