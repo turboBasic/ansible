@@ -1,7 +1,26 @@
 ---
 
-- import_tasks: keys.yaml
-- import_tasks: teams.yaml
-- import_tasks: vscode.yaml
+- name: Install Microsoft public key
+  become: yes
+  apt_key:
+    url: '{{ microsoft_packages_server }}/keys/microsoft.asc'
+    state: present
+
+- name: Add MS Teams repo
+  become: yes
+  apt_repository:
+    repo: 'deb [arch=amd64] {{ microsoft_packages_server }}/repos/ms-teams stable main'
+    filename: teams
+    state: present
+
+- name: Add VS Code repo
+  become: yes
+  apt_repository:
+    repo: 'deb [arch=amd64] {{ microsoft_packages_server }}/repos/vscode stable main'
+    filename: vscode
+    state: present
+
+# TODO: chmod o+r /etc/apt/sources.list.d/teams.list
+# TODO: chmod o+r /etc/apt/sources.list.d/vscode.list
 
 ...

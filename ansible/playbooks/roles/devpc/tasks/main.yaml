@@ -26,4 +26,14 @@
 - name: Import Clang task
   ansible.builtin.import_tasks: clang.yaml
 
+- name: Install VS Code
+  ansible.builtin.package:
+    state: present
+    name: "{{ visual_studio_code_package }}{{ (visual_studio_code_version | length > 0) | ternary('=' + visual_studio_code_version, '') }}"
+
+- name: Install MS Teams
+  ansible.builtin.package:
+    state: present
+    name: teams
+
 ...

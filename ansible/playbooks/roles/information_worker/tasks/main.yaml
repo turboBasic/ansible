@@ -11,4 +11,9 @@
     - mc
     - neovim
 
+- name: Install MS Teams
+  ansible.builtin.package:
+    state: present
+    name: teams
+
 ...
