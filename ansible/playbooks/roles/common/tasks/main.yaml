@@ -13,11 +13,16 @@
     state: present
     name: '{{ item }}'
   with_items:
+    - apt-file
+    - copyq
+    - flameshot
     - git
+    - htop
     - mc
     - neovim
     - openssh-server
     - rsync
+    - sysstat
     - tree
     - zsh
 
