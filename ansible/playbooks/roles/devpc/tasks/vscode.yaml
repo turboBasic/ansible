@@ -1,15 +1,9 @@
 ---
 
-- name: Install Microsoft public key
-  become: yes
-  apt_key:
-    url: '{{ visual_studio_code_mirror }}/keys/microsoft.asc'
-    state: present
-
 - name: Add VS Code repo
   become: yes
   apt_repository:
-    repo: 'deb [arch=amd64] {{ visual_studio_code_mirror }}/repos/vscode stable main'
+    repo: 'deb [arch=amd64] {{ microsoft_packages_server }}/repos/vscode stable main'
     filename: vscode
     state: present
 

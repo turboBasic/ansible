@@ -1,0 +1,9 @@
+---
+
+- name: Install Microsoft public key
+  become: yes
+  apt_key:
+    url: '{{ microsoft_packages_server }}/keys/microsoft.asc'
+    state: present
+
+...
