@@ -3,6 +3,5 @@
 - hosts: devpcs
   roles:
     - common
-    - cloud_client
-    - microsoft_tools
     - devpc
+    - microsoft_tools

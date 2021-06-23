@@ -3,6 +3,6 @@
 - hosts: laptops
   roles:
     - common
-    - cloud_client
+    - information_worker
     - microsoft_tools
     - vpn_client

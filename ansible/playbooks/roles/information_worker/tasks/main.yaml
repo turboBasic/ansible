@@ -1,12 +1,14 @@
 ---
 
-- name: Install clients for cloud-based infrastructure
+- name: Install generic information-worker software
   ansible.builtin.package:
     state: present
     name: '{{ item }}'
   with_items:
-    - ansible
-    - docker.io
+    - copyq
+    - flameshot
     - lastpass-cli
+    - mc
+    - neovim
 
 ...

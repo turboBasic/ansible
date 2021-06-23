@@ -7,13 +7,21 @@
   with_items:
     - ansible
     - ansible-lint
+    - apt-file
+    - docker.io
     - gawk
     - jq
+    - openssh-server
     - python3-pip
     - python3-venv
     - ripgrep
+    - rsync
+    - sysstat
     - tig
+    - tree
     - zeal
+    - zsh
+
 
 - name: Import Clang task
   ansible.builtin.import_tasks: clang.yaml
