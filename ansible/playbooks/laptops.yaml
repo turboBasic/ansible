@@ -3,5 +3,5 @@
 - hosts: laptops
   roles:
     - common
-    - cloudclient
-    - vpn
+    - cloud_client
+    - vpn_client

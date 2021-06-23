@@ -3,5 +3,5 @@
 - hosts: devpcs
   roles:
     - common
-    - cloudclient
+    - cloud_client
     - devpc
