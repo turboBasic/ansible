@@ -2,6 +2,5 @@
 
 - hosts: devpcs
   roles:
-    - common
     - devpc
-    - microsoft_tools
+    - vpn_client

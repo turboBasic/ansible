@@ -2,7 +2,5 @@
 
 - hosts: laptops
   roles:
-    - common
     - information_worker
-    - microsoft_tools
     - vpn_client

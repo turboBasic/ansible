@@ -1,5 +1,10 @@
 ---
 
+- hosts: laptops:devpcs
+  roles:
+    - common
+    - microsoft_tools
+
 - name: Import laptops play
   import_playbook: laptops.yaml
 
