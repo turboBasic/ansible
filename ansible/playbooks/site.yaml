@@ -1,0 +1,9 @@
+---
+
+- name: Import laptops play
+  import_playbook: laptops.yaml
+
+- name: Import devpcs play
+  import_playbook: devpcs.yaml
+
+...
