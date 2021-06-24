@@ -13,12 +13,15 @@
     state: present
     name: '{{ item }}'
   with_items:
+    - aria2
     - copyq
+    - curl
     - flameshot
     - git
     - htop
     - mc
     - neovim
     - tree
+    - wget
 
 ...
