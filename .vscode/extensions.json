@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "ahmadawais.emoji-log-vscode",
+        "andyyaldoo.vscode-json",
         "bierner.markdown-emoji",
         "codezombiech.gitignore",
         "donjayamanne.git-extension-pack",
@@ -11,6 +12,7 @@
         "maixiaojie.git-emoji",
         "mhutchie.git-graph",
         "redhat.vscode-yaml",
+        "sidneys1.gitconfig",
         "timonwong.shellcheck",
         "yzhang.markdown-all-in-one",
         "zbr.vscode-ansible",
