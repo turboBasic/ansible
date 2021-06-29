@@ -1,15 +1,21 @@
 ---
 
-- name: Install generic information-worker software
+- name: Install generic information-worker software from Apt repositories
   ansible.builtin.package:
     state: present
     name: '{{ item }}'
   with_items:
     - copyq
     - flameshot
+    - gimp
     - lastpass-cli
     - mc
     - neovim
+
+- name: Install generic information-worker software from Snap package repository
+  snap:
+    name:
+      - emote
 
 - name: Install MS Teams
   ansible.builtin.package:
