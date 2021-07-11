@@ -50,4 +50,8 @@
     state: present
     name: teams
 
+
+- name: Import AWS task
+  ansible.builtin.import_tasks: aws.yaml
+
 ...
