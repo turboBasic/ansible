@@ -8,18 +8,27 @@
     - ansible
     - ansible-lint
     - apt-file
+    - build-essential
+    - chrpath
+    - cpio
+    - debianutils
+    - diffstat
     - docker.io
     - gawk
     - jq
     - openssh-server
+    - python3-git
+    - python3-jinja2
     - python3-pip
     - python3-venv
     - repo
     - ripgrep
     - rsync
+    - socat
     - sysstat
     - tig
     - tree
+    - xz-utils
     - zeal
     - zsh
     - zstd

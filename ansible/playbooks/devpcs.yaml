@@ -4,3 +4,4 @@
   roles:
     - devpc
     - vpn_client
+    - yocto

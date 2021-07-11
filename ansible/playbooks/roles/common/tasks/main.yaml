@@ -21,7 +21,10 @@
     - htop
     - mc
     - neovim
+    - openssh-client
     - tree
+    - unzip
     - wget
+    - xterm
 
 ...
