@@ -10,6 +10,7 @@
     - apt-file
     - build-essential
     - chrpath
+    - cloc
     - cpio
     - debianutils
     - diffstat
