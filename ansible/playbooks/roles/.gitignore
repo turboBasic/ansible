@@ -1,0 +1,14 @@
+# Ignore everything in roles dir
+/*
+# Except:
+!.gitignore
+!requirements.yml
+!README.md
+#
+!common
+!devpc
+!information_worker
+!microsoft_tools
+!requirements.yml
+!vpn_client
+!yocto
