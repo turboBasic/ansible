@@ -7,11 +7,7 @@ main() {
     echo "SCRIPT_DIR: ${SCRIPT_DIR}"
 
     sudo rsync --archive --verbose "${SCRIPT_DIR}"/ansible/etc/ansible/ /etc/ansible
-
-    (
-        cd ansible
-        ansible-galaxy install --role-file playbooks/roles/requirements.yml --roles-path playbooks/roles
-    )
+    ansible-galaxy install --role-file ansible/roles/requirements.yml --roles-path ansible/roles
 }
 
 
