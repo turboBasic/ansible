@@ -4,8 +4,7 @@ New Ansible playbooks
 > 2021 effort to re-create Ansible playbooks for personal use
 
 
-## Installation
+## Usage
 
-```sh
-./build.sh
-```
+    ./build.sh
+    ansible-playbook ansible/site.yaml --connection local --become
