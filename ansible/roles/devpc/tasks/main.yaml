@@ -17,6 +17,8 @@
     - docker.io
     - gawk
     - jq
+    - meld
+    - ninja-build
     - openssh-server
     - python3-git
     - python3-jinja2

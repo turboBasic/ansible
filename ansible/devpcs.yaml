@@ -5,4 +5,5 @@
     - devpc
     - vpn_client
     - yocto
+    - diodonfrost.terraform
     - diodonfrost.terragrunt
