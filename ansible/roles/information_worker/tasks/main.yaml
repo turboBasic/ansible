@@ -16,6 +16,7 @@
   snap:
     name:
       - emote
+      - rocketchat-desktop
 
 - name: Install MS Teams
   ansible.builtin.package:

@@ -18,6 +18,7 @@
     - curl
     - flameshot
     - git
+    - git-gui
     - htop
     - mc
     - neovim
