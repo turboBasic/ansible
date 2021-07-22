@@ -16,11 +16,13 @@
     - diffstat
     - docker.io
     - gawk
+    - git-crypt
     - jq
     - meld
     - ninja-build
     - openssh-server
     - python3-git
+    - python3-invoke
     - python3-jinja2
     - python3-pip
     - python3-venv
