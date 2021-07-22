@@ -4,7 +4,7 @@
   roles:
     - role: Comcast.sdkman
       sdkman_install_packages:
-        # - { candidate: java, version: 8.0.292-zulu }
+        - { candidate: java, version: 8.0.292.j9-adpt }
         - { candidate: gradle, version: 7.1.1 }
         - { candidate: maven, version: 3.8.1 }
         - { candidate: groovy, version: 2.4.12 }
