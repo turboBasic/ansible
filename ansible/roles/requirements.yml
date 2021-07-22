@@ -2,5 +2,6 @@
 
 - src: diodonfrost.terraform
 - src: diodonfrost.terragrunt
+- src: Comcast.sdkman
 
 ...

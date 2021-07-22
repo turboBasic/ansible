@@ -1,0 +1,27 @@
+---
+
+- hosts: devpcs
+  roles:
+    - role: Comcast.sdkman
+      sdkman_install_packages:
+        # - { candidate: java, version: 8.0.292-zulu }
+        - { candidate: gradle, version: 7.1.1 }
+        - { candidate: maven, version: 3.8.1 }
+        - { candidate: groovy, version: 2.4.12 }
+        - { candidate: groovy, version: 3.0.8 }
+      sdkman_flush_caches_before:
+        - temp
+      sdkman_flush_caches_after:
+        - archives
+        - broadcast
+        - candidates
+        - temp
+    #   sdkman_update_alternatives:
+    #     - candidate: java
+    #       name: java
+    #       link: /usr/bin/java
+    #     - candidate: java
+    #       name: javac
+    #       link: /usr/bin/javac
+
+...

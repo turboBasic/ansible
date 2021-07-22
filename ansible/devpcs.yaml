@@ -7,3 +7,6 @@
     - yocto
     - diodonfrost.terraform
     - diodonfrost.terragrunt
+    - Comcast.sdkman
+
+...
