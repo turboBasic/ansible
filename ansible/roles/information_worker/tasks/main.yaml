@@ -9,6 +9,7 @@
     - flameshot
     - gimp
     - lastpass-cli
+    - libsox-fmt-mp3
     - mc
     - neovim
     - sox
