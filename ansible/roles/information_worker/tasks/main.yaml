@@ -11,6 +11,7 @@
     - lastpass-cli
     - mc
     - neovim
+    - sox
 
 - name: Install generic information-worker software from Snap package repository
   snap:
