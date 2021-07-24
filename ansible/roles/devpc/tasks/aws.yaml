@@ -1,5 +1,10 @@
 ---
 
+- name: Check for AWS CLI installation
+  stat:
+    path: /usr/local/bin/aws
+  register: aws
+
 - name: Download AWS CLI v2 installer
   unarchive:
     src: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
@@ -7,6 +12,7 @@
     remote_src: yes
     creates: /tmp/aws
     mode: 0755
+  when: not aws.stat.exists
 
 - name: Run the AWS CLI v2 installer
   command:
@@ -15,6 +21,7 @@
     creates: /usr/local/bin/aws
   become: true
   register: aws_install
+  when: not aws.stat.exists
 
 - name: Make AWS CLI package discoverable
   ansible.builtin.file:
