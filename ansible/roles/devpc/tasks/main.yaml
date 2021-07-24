@@ -21,11 +21,6 @@
     - meld
     - ninja-build
     - openssh-server
-    - python3-git
-    - python3-invoke
-    - python3-jinja2
-    - python3-pip
-    - python3-venv
     - repo
     - ripgrep
     - rsync
@@ -37,10 +32,6 @@
     - zeal
     - zsh
     - zstd
-
-
-- name: Clang/LLVM stack
-  ansible.builtin.import_tasks: clang.yaml
 
 
 - name: Install VS Code
@@ -59,7 +50,15 @@
   ansible.builtin.import_tasks: aws.yaml
 
 
+- name: Clang/LLVM stack
+  ansible.builtin.import_tasks: clang.yaml
+
+
 - name: Node stack
   ansible.builtin.import_tasks: node.yaml
+
+
+- name: Python stack
+  ansible.builtin.import_tasks: python.yaml
 
 ...

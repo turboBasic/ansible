@@ -1,0 +1,16 @@
+---
+
+- name: Install Python and packages
+  ansible.builtin.package:
+    state: present
+    name: '{{ item }}'
+  with_items:
+    - python3-git
+    - python3-invoke
+    - python3-jinja2
+    - python3-matplotlib
+    - python3-pandas
+    - python3-pip
+    - python3-venv
+
+...
