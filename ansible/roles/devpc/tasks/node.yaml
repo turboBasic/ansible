@@ -1,0 +1,11 @@
+---
+
+- name: Install Node
+  ansible.builtin.package:
+    state: present
+    name: '{{ item }}'
+  with_items:
+    - nodejs
+    - npm
+
+...

@@ -39,7 +39,7 @@
     - zstd
 
 
-- name: Import Clang task
+- name: Clang/LLVM stack
   ansible.builtin.import_tasks: clang.yaml
 
 
@@ -55,7 +55,11 @@
     name: teams
 
 
-- name: Import AWS task
+- name: AWS stack
   ansible.builtin.import_tasks: aws.yaml
+
+
+- name: Node stack
+  ansible.builtin.import_tasks: node.yaml
 
 ...
