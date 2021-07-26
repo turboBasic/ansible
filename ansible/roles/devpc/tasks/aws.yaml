@@ -36,4 +36,13 @@
     var: aws_install
     verbosity: 2
 
+# Install a snap with classic confinement
+- name: Install amazon-ssm-agent
+  community.general.snap:
+    name: amazon-ssm-agent
+    classic: yes
+
+# TODO  curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
+# TODO  sudo dpkg --install session-manager-plugin.deb
+
 ...
