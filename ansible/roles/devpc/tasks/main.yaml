@@ -54,6 +54,10 @@
   ansible.builtin.import_tasks: clang.yaml
 
 
+- name: Kubernetes stack
+  ansible.builtin.import_tasks: k8.yaml
+
+
 - name: Node stack
   ansible.builtin.import_tasks: node.yaml
 
