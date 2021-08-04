@@ -7,5 +7,16 @@
   with_items:
     - nodejs
     - npm
+  when: install_nodejs_using_package_manager
+
+- name: nvm
+  ansible.builtin.shell: >
+    curl --output - https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+
+    #   Node packages:
+    # - "@bitwarden/cli"
+    # - benny-hill
 
 ...

@@ -15,6 +15,7 @@
     - debianutils
     - diffstat
     - docker.io
+    - fzf
     - gawk
     - git-crypt
     - jq
@@ -25,6 +26,8 @@
     - ripgrep
     - rsync
     - socat
+    - sshpass
+    - stow
     - sysstat
     - tig
     - tree

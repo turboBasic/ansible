@@ -7,6 +7,9 @@ main() {
     echo "SCRIPT_DIR: ${SCRIPT_DIR}"
 
     sudo rsync --archive --verbose "${SCRIPT_DIR}"/ansible/etc/ansible/ /etc/ansible
+    grep --recursive --files-with-matches --fixed-strings -- '{{ hostname }}' /etc/ansible \
+    |   xargs sed --in-place --regexp-extended "s/\{\{ hostname \}\}/$(hostname)/"
+
     ansible-galaxy install --role-file ansible/roles/requirements.yml --roles-path ansible/roles
 }
 
