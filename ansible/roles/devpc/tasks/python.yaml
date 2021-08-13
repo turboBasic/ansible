@@ -12,5 +12,12 @@
     - python3-pandas
     - python3-pip
     - python3-venv
+    - pipx
+
+- name: pyenv
+  ansible.builtin.shell: >
+    curl https://pyenv.run | bash
+  args:
+    creates: "{{ ansible_env.HOME }}/.pyenv/libexec/pyenv"
 
 ...
