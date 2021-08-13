@@ -1,6 +1,6 @@
 ---
 
-- hosts: devpcs
+- hosts: all
   roles:
     - role: Comcast.sdkman
       sdkman_install_packages:
