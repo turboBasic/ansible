@@ -1,6 +1,7 @@
 ---
 
-- hosts: laptops
+- hosts: all
   roles:
+    - microsoft_repos
     - information_worker
     - vpn_client

@@ -2,11 +2,15 @@
 
 - hosts: devpcs
   roles:
+    - microsoft_repos
     - devpc
     - vpn_client
     - yocto
     - diodonfrost.terraform
     - diodonfrost.terragrunt
     - Comcast.sdkman
+
+- name: Import python play
+  import_playbook: python.yaml
 
 ...
