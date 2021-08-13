@@ -4,3 +4,6 @@ mao-dell-ws
 [devpcs]
 mao-dell-ws
 {{ hostname }}
+
+[this]
+{{ hostname }}
