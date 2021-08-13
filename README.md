@@ -7,4 +7,5 @@ New Ansible playbooks
 ## Usage
 
     ./build.sh
+    ansible-playbook ansible/python.yaml --limit this
     ansible-playbook ansible/site.yaml --connection local --become
