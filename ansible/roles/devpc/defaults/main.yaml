@@ -6,7 +6,4 @@ visual_studio_code_version: ''
 # Build (either 'stable' or 'insiders') https://code.visualstudio.com/insiders/
 visual_studio_code_build: stable
 
-# Install Node.js using package manager vs NVM
-install_nodejs_using_package_manager: no
-
 ...
