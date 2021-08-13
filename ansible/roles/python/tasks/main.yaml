@@ -14,10 +14,7 @@
     - python3-venv
     - pipx
 
-- name: pyenv
-  ansible.builtin.shell: >
-    curl https://pyenv.run | bash
-  args:
-    creates: "{{ ansible_env.HOME }}/.pyenv/libexec/pyenv"
+- name: Pyenv
+  ansible.builtin.import_tasks: pyenv.yaml
 
 ...
