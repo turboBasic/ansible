@@ -1,0 +1,13 @@
+---
+
+# Usage:
+#   execute ./build.sh to create group `this`
+#   ansible-playbook ansible/python.yaml --limit this
+
+- hosts: all
+  become: yes
+  gather_facts: yes
+  roles:
+    - python
+
+...
