@@ -1,16 +1,17 @@
 ---
 
-- hosts: devpcs
+- name: Import information_worker play
+  import_playbook: information_worker.yaml
+
+- name: Import python play
+  import_playbook: python.yaml
+
+- hosts: all
   roles:
-    - microsoft_repos
     - devpc
-    - vpn_client
     - yocto
     - diodonfrost.terraform
     - diodonfrost.terragrunt
     - Comcast.sdkman
-
-- name: Import python play
-  import_playbook: python.yaml
 
 ...
