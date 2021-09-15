@@ -1,24 +1,22 @@
 ---
 
-- name: Install Microsoft public key
-  become: yes
-  apt_key:
+- ansible.builtin.apt_key:
     url: '{{ microsoft_packages_server }}/keys/microsoft.asc'
+    keyring: microsoft
     state: present
-
-- name: Add MS Teams repo
   become: yes
-  apt_repository:
+
+- ansible.builtin.apt_repository:
     repo: 'deb [arch=amd64] {{ microsoft_packages_server }}/repos/ms-teams stable main'
-    filename: teams
+    filename: microsoft
     state: present
-
-- name: Add VS Code repo
   become: yes
-  apt_repository:
+
+- ansible.builtin.apt_repository:
     repo: 'deb [arch=amd64] {{ microsoft_packages_server }}/repos/vscode stable main'
-    filename: vscode
+    filename: microsoft
     state: present
+  become: yes
 
 # TODO: chmod o+r /etc/apt/sources.list.d/teams.list
 # TODO: chmod o+r /etc/apt/sources.list.d/vscode.list

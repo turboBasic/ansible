@@ -17,4 +17,9 @@
 - name: Pyenv
   ansible.builtin.import_tasks: pyenv.yaml
 
+- name: Install modules with Pipx
+  ansible.builtin.command:
+    cmd: pipx install black
+    creates: "{{ ansible_env.HOME }}/.local/bin/black"
+
 ...
