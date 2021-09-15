@@ -7,16 +7,15 @@
         'apt-transport-https',
     ]
 
-- name: Add an Apt signing key
-  ansible.builtin.apt_key:
+- ansible.builtin.apt_key:
     url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    keyring: kubernetes
     state: present
 
-# Add specified repository into sources list using specified filename.
-- apt_repository:
+- ansible.builtin.apt_repository:
     repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+    filename: kubernetes
     state: present
-    filename: 'kubernetes'
 
 - name: Install Kubernetes
   ansible.builtin.package:

@@ -9,6 +9,7 @@
     - ansible-lint
     - apt-file
     - build-essential
+    - ccache
     - chrpath
     - cloc
     - cpio
@@ -28,6 +29,7 @@
     - socat
     - sshpass
     - stow
+    - subversion
     - sysstat
     - tig
     - tree
@@ -37,10 +39,17 @@
     - zstd
 
 
-- name: Install VS Code
+- name: VS Code
   ansible.builtin.package:
     state: present
     name: "{{ visual_studio_code_package }}{{ (visual_studio_code_version | length > 0) | ternary('=' + visual_studio_code_version, '') }}"
+
+
+- name: IntelliJ IDEA
+  community.general.snap:
+    state: present
+    name: intellij-idea-community
+    classic: yes
 
 
 - name: AWS stack
@@ -53,5 +62,13 @@
 
 - name: Kubernetes stack
   ansible.builtin.import_tasks: k8.yaml
+
+
+- name: JFrog utils
+  ansible.builtin.import_tasks: jfrog.yaml
+
+
+- name: Zsh stack
+  ansible.builtin.import_tasks: zsh.yaml
 
 ...

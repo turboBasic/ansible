@@ -1,0 +1,8 @@
+---
+
+- name: Install pure prompt
+  ansible.builtin.command:
+    cmd: "git clone https://github.com/sindresorhus/pure.git {{ ansible_env.HOME }}/.zsh/pure"
+    creates: "{{ ansible_env.HOME }}/.zsh/pure/.git"
+
+...

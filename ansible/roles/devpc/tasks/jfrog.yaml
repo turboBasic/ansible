@@ -1,0 +1,20 @@
+---
+
+- ansible.builtin.apt_key:
+    url: https://releases.jfrog.io/artifactory/api/gpg/key/public
+    keyring: jfrog
+    state: present
+  become: yes
+
+- ansible.builtin.apt_repository:
+    repo: 'deb https://releases.jfrog.io/artifactory/jfrog-debs xenial contrib'
+    filename: jfrog
+    state: present
+  become: yes
+
+- name: Install JFrog CLI
+  ansible.builtin.package:
+    state: present
+    name: jfrog-cli-v2
+
+...
