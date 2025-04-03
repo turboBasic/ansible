@@ -20,4 +20,4 @@ requests==2.25.1
 resolvelib==0.5.4
 SecretStorage==3.3.1
 urllib3==1.26.5
-zipp==3.4.1
+zipp==3.19.1
