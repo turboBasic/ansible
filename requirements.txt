@@ -16,7 +16,7 @@ pycparser==2.20
 pycryptodome==3.10.1
 pyparsing==2.4.7
 PyYAML==5.4.1
-requests==2.25.1
+requests==2.32.2
 resolvelib==0.5.4
 SecretStorage==3.3.1
 urllib3==1.26.19
