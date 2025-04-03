@@ -7,7 +7,7 @@ cryptography==39.0.1
 idna==2.10
 importlib-metadata==4.5.0
 jeepney==0.6.0
-Jinja2==3.0.1
+Jinja2==3.1.6
 keyring==23.0.1
 lastpass-python==0.3.2
 MarkupSafe==2.0.1
