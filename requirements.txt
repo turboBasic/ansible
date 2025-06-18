@@ -19,5 +19,5 @@ PyYAML==5.4.1
 requests==2.32.2
 resolvelib==0.5.4
 SecretStorage==3.3.1
-urllib3==1.26.19
+urllib3==2.5.0
 zipp==3.19.1
